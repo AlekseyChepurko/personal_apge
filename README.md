@@ -1,1 +1,3 @@
 # chepurkoai.ru repo
+
+	gulp
