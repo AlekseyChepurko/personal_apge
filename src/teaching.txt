@@ -1,0 +1,83 @@
+	<!-- Section -->
+					<section class="wrapper style2" id="teaching">
+						<div class="inner">
+							<div class="flex flex-2">
+								<div class="col col2">
+									<h2>Преподавание</h2>
+									<!-- <h4>Среднее образование</h4> -->
+									<p>В 2014 году в качестве хобби я начал помогать людям разбираться в тех или иных задачах, связанных с точными науками. Помогаю в том, в чем разбираюсь лучше всего:
+										<ul>
+											<li>Математика</li>
+											<li>Информатика</li>
+											<li>Програмиирование</li>
+										</ul>
+										Некоторые отзывы моих учеников могут показать мое отношение к любому делу, за которое берусь:
+									</p>
+									
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<img src="images/teaching.png" alt="images/unknown.png" />
+									</div>
+								</div>
+							</div>
+
+							<div class="feedbacks_wrap">
+								<div class="feedback flex flex-2">
+									<div class="image round fit author_image col col1">
+										<a href="https://vk.com/id22782366"><img src="images/ship.jpg" alt="images/unknown.png"></a>
+									</div>
+									<div class="feedback_content col col2">
+										<h4 class="author_name"><a href="https://vk.com/id22782366">Шипицын Юрий</a></h4>
+										<p class="feedback_text">Добрый день! Меня зовут Юра и я бы хотел рассказать о своём опыте занятий с Алексеем Ивановичем. Начинал я заниматься информатикой с "нуля", Алексей Иванович научил меня выполнять все задания из ЕГЭ. Он дал мне именно ту базу, которая необходима для самоподготовки к ЕГЭ по информатике. Сам педагог очень отзывчивый, приятный и знающий своё дело человек. Определённо рекомендую его.</p>
+									</div>
+								</div>
+
+								<div class="feedback flex flex-2">
+									<div class="image round fit author_image col col1">
+										<a href="https://vk.com/a_murza"><img src="images/anonym.png" alt="images/unknown.png"></a>
+									</div>
+									<div class="feedback_content col col2">
+										<h4 class="author_name"><a href="https://vk.com/a_murza">Артур Гумиров</a></h4>
+										<p class="feedback_text">Занятия с тобой очень крутые. Время проходило незаметно. Плюс ты мне объяснял выше программы, что помогает мне и на мат-мехе. Ты заставлял меня не просто "решать по алгоритму", а понимать каждую строчку написанного мной или тобой. Также ты показал мне как большую и сложную , казалось бы задачу, можно , разбив на части, и подумав , решить в 5 строчек. Уровень знаний у тебя, как мне кажется, большой. Ты знаешь очень многое и не только из области информатики и программирования. О взаимодействии ученик-учитель. 
+										Мы занимались с тобой в позднее время . С 8 до 10 или с 9 до 11. Это очень тяжело объяснять какой-либо материал в такое позднее время. Но ты всегда был оптимистично настроен и "заражал" этим оптимизмом меня. И все давалось очень легко.</p>
+									</div>
+								</div>
+
+								<div class="feedback flex flex-2">
+									<div class="image round fit author_image col col1">
+										<a href="https://vk.com/vk_169706704"><img src="images/anonym.png" alt="images/unknown.png"></a>
+									</div>
+									<div class="feedback_content col col2">
+										<h4 class="author_name"><a href="https://vk.com/vk_169706704">Нихад Самедов</a></h4>
+										<p class="feedback_text">Преподаватель хорошо объясняет, если один подход не подходит, значит, пробует другие. Пользуемся на уроках заданиями с ЕГЭ из интернета и решаем. Я стал лучше разбираться и решать.</p>
+									</div>
+								</div>
+
+
+								<div class="feedback flex flex-2">
+									<div class="image round fit author_image col col1">
+										<a href="http://spb.repetitors.info/comments.php?p=ChepurkoAI"><img src="images/anonym.png" alt="images/unknown.png"></a>
+									</div>
+									<div class="feedback_content col col2">
+										<h4 class="author_name"><a href="http://spb.repetitors.info/comments.php?p=ChepurkoAI">Владислава</a></h4>
+										<p class="feedback_text">Мой сын занимался с Алексеем Ивановичем информатикой. За короткий срок удалось устранить пробелы в знаниях предмета. Сыну интересно и легко с ним заниматься. Преподаватель компетентен, умеет найти общий язык с учеником, доброжелателен и отзывчив. После нескольких занятий появилась уверенность в понимании предмета.Оценка по пятибальной шкале - 5+++. Рекомендую.</p>
+									</div>
+								</div>
+
+								<div class="feedback flex flex-2">
+									<div class="image round fit author_image col col1">
+										<a href="http://spb.repetitors.info/comments.php?p=ChepurkoAI"><img src="images/anonym.png" alt="images/unknown.png"></a>
+									</div>
+									<div class="feedback_content col col2">
+										<h4 class="author_name"><a href="http://spb.repetitors.info/comments.php?p=ChepurkoAI">Елена</a></h4>
+										<p class="feedback_text">Алексей Иванович - очень общительный, позитивный, пунктуальный педагог по информатике и программированию. За 3 урока он помог ребёнку разобраться в вычислительной технике.</p>
+									</div>
+								</div>
+
+
+	
+
+							</div>
+						</div>
+					</section>

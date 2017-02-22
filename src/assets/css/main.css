@@ -2,11 +2,21 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Scope+One|Trocchi");
 
-/*
-	Urban by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+
+@font-face {
+	font-family: liruss;
+	src: url("../fonts/liruss-tegra.ttf");
+}
+
+@font-face {
+	font-family: elizabeth;
+	src: url("../fonts/elizabeth.ttf");
+}
+
+@font-face {
+	font-family: kurale;
+	@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+}
 
 /* Reset */
 
@@ -16,6 +26,7 @@
 		border: 0;
 		font-size: 100%;
 		font: inherit;
+		font-family: kurale;
 		vertical-align: baseline;
 	}
 
@@ -2095,7 +2106,7 @@
 
 					.flex.flex-2 .col.col1 .image, .flex.flex-2 .col.col2 .image {
 						max-width: 60%;
-						margin: 0 auto 2em auto;
+						margin: 0 auto 0 auto;
 					}
 
 			}
@@ -2489,7 +2500,7 @@
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 auto 2em auto;
 			width: 100%;
 		}
 
@@ -2499,10 +2510,12 @@
 
 		.image.round {
 			border-radius: 100%;
+			max-width: 200px;
 		}
 
 			.image.round img {
 				border-radius: 100%;
+				background-color: white;
 			}
 
 		.image.main {
@@ -2741,6 +2754,8 @@
 		color: #bfbfbf;
 	}
 
+	
+
 /* Tab */
 
 	ul.tab-list {
@@ -2880,6 +2895,7 @@
 			width: 80em;
 			position: relative;
 			z-index: 99;
+			// font-size: 1.5;
 		}
 
 		.wrapper header {
@@ -2897,6 +2913,7 @@
 		.wrapper.style1 {
 			background-color: #fafafa;
 			color: #999999;
+			// min-height: 100vh;
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
@@ -2916,7 +2933,7 @@
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #000;
+				// color: #000;
 			}
 
 			.wrapper.style1 blockquote {
@@ -3107,8 +3124,12 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #3498db;
-			color: #aed6f1;
+			background-color: rgba(0,0,0, 0.75);
+			// background-color: black;
+
+			// color: #aed6f1;
+			color: #fff;
+			// min-height: 100vh;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3116,7 +3137,7 @@
 			}
 
 			.wrapper.style2 a {
-				color: #999999;
+				color: #FFF;
 			}
 
 				.wrapper.style2 a:hover {
@@ -3131,6 +3152,8 @@
 				color: #fff;
 			}
 
+
+			
 			.wrapper.style2 blockquote {
 				border-left-color: rgba(255, 255, 255, 0.25);
 			}
@@ -3319,7 +3342,7 @@
 			}
 
 			.wrapper.style2 .image {
-				box-shadow: 0px 0px 0px 7px #3498db, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
+				box-shadow: 0px 0px 0px 7px rgba(255,255,255, 0.075), 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3401,7 +3424,7 @@
 	}
 
 	#header {
-		background: rgba(0, 0, 0, 0.75);
+		background: rgba(0, 0, 0, 1);
 		color: #aed6f1;
 		cursor: default;
 		height: 3.25em;
@@ -3412,6 +3435,8 @@
 		top: 0;
 		width: 100%;
 		z-index: 10001;
+		font-family: kurale;
+		font-size: 1.75em;
 	}
 
 		#header > .logo {
@@ -3450,6 +3475,7 @@
 			color: inherit;
 			text-decoration: none;
 			color: #FFF;
+			font-size: 1.5em;
 		}
 
 			#header > a:hover {
@@ -3486,7 +3512,9 @@
 			}
 
 			@media screen and (max-width: 736px) {
-
+				#header {
+					font-size: 1.25em;
+				}
 				#header > a {
 					padding: 0 0.5em;
 				}
@@ -3498,6 +3526,16 @@
 
 					#header > a:last-child {
 						padding-right: 1em;
+					}
+
+			}
+
+			@media screen and (max-width: 480px) {
+				
+
+					#header > a:last-child {
+						padding-right: 1em;
+						font-size: 1em;
 					}
 
 			}
@@ -3597,6 +3635,9 @@
 				#menu > ul.links > li {
 					padding: 0;
 				}
+					#menu > ul.links > li > a {
+						font-size: 2em;
+					}
 
 					#menu > ul.links > li > a:not(.button) {
 						border: 0;
@@ -3665,6 +3706,11 @@
 				#menu .close {
 					height: 4em;
 					line-height: 4em;
+					font-size: 1.5em;
+				}
+
+				#menu > ul.links > li > a {
+					font-size: 1em;
 				}
 
 			}
@@ -3732,7 +3778,8 @@
 		}
 
 		#banner h1 {
-			font-size: 4em;
+			font-family: kurale;
+			font-size: 5em;
 			margin-bottom: .25em;
 			color: #FFF;
 		}
@@ -3827,7 +3874,7 @@
 				}
 
 				#banner h1 {
-					font-size: 1.75em;
+					font-size: 3em;
 					margin-bottom: 0.5em;
 					padding-bottom: 0;
 				}
@@ -3845,7 +3892,7 @@
 		@media screen and (max-width: 480px) {
 
 			#banner p {
-				font-size: 1em;
+				font-size: 1.5em;
 			}
 
 		}
@@ -3864,9 +3911,9 @@
 
 /* Footer */
 
-	#footer {
-		padding: 6em 2em 4em 2em;
-	}
+	// #footer {
+	// 	padding: 6em 2em 4em 2em;
+	// }
 
 		#footer > .inner {
 			margin: 0 auto;
@@ -3881,6 +3928,13 @@
 			text-align: center;
 		}
 
+		.copyright>div{
+			margin: 1em;
+			font-size: 2em;
+			display: inline-block;
+			border-bottom: 2px solid #999999;
+		}
+
 			#footer .copyright .icons a {
 				border-radius: 100%;
 				box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 4px #fff, 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -3891,6 +3945,13 @@
 				margin: 0 auto 0.7em;
 				text-align: center;
 				width: 3em;
+				transition: all .5s;
+			}
+
+			#footer .copyright .icons a:hover {
+				background-color: #3498db;
+				color: white;
+				transition: all .5s;				
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3912,7 +3973,10 @@
 		@media screen and (max-width: 736px) {
 
 			#footer {
-				padding: 3em 1em 1em 1em;
+				padding: 1em 1em 1em 1em;
+			}
+			.copyright>div {
+				font-size: 1.5em;
 			}
 
 		}

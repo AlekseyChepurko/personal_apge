@@ -1,0 +1,130 @@
+// @font-face {
+// 	font-family: liruss;
+// 	// src: url("../fonts/liruss-tegra.ttf");
+// }
+
+
+$main-color: #3498db;
+
+body {
+	color: white;
+	text-align: justify;
+}
+
+.service {
+	max-width: 15vw;
+	// max-height: 15vw;
+	display: inline-block;
+	vertical-align: top;
+	padding: 50px 0 0;
+	
+
+	@media screen and (max-width: 980px) {
+		max-width: 25vw;
+		// max-height: 25vw;
+
+	}
+
+	@media screen and (max-width: 736px) {
+		max-width: 35vw;
+		// max-height: 35vw;
+
+	}
+
+
+
+	img {
+		&:hover{
+			// transform: scale(1.05);
+		}
+
+		display: block;
+		margin: auto;
+		transition: all .3s;
+		max-width: 100%;
+		
+		max-height: 150px;
+
+		@media screen and (max-width: 980px) {
+		max-width: 25vw;
+		max-height: 150px;
+
+		}
+
+		@media screen and (max-width: 736px) {
+			max-width: 35vw;
+			max-height: 100px;
+
+		}
+
+	}
+
+	.service_name, .service_description {
+		text-align: center;
+	}
+
+	.service_name {
+		color: $main-color;
+		font-weight: bold;
+	}
+}
+
+
+.feedback {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	>.image{
+		align-self: flex-start;
+		
+	}
+
+	>.feedback_content {
+		@media screen and (max-width: 768px){
+			>.author_name{
+				text-align: center;
+				font-size: 2em;
+			}
+
+			>.feedback_text {
+				font-size: 1.2em;
+			}
+
+		}
+	}
+
+}
+
+.skills_wrap {
+	text-align: center;
+}
+
+.skill {
+	list-style: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 1.5em 2em auto;
+	> img {
+		max-height: 10em;
+		max-width: 200px;
+	}
+
+}
+
+
+
+
+// @media screen and (max-width: 1280px) {
+
+// }
+
+// @media screen and (max-width: 980px) {
+// 	// display: block;
+// }
+
+// @media screen and (max-width: 736px) {
+
+// }

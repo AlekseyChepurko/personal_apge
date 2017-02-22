@@ -12,6 +12,7 @@ var sourcemaps = require('gulp-sourcemaps'); //История изменения
 var uglify = require('gulp-uglify'); // Минификация скриптов
 var wiredep = require('gulp-wiredep');
 var useref = require('gulp-useref');
+var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
 // таска, запускаемая по дефолту после запуска команды gulp
@@ -27,11 +28,11 @@ gulp.task('production', ['clean'], function() {
 gulp.task('dev', ['build', 'watch', 'browser-sync']);
 
 // выполянет сборку
-gulp.task('build', ['html', 'styles', 'scripts', 'assets']);
+gulp.task('build', ['html', 'assets','styles', 'scripts',  'images']);
 
 // следит за изменениями во всех файлах проекта и, при их изменении, автоматически применяет эти изменения к конечным файлам
 gulp.task('watch', function() {
-	gulp.watch('src/styles/**/*.css', ['styles']);
+	gulp.watch('src/assets/**/*.*css', ['styles']);
     gulp.watch('src/js/*.js', ['scripts']); 
     gulp.watch(['./bower.json', 'src/*.html'], ['html']);
     gulp.watch('./src/assets/**/*.*', ['assets']);
@@ -46,7 +47,7 @@ gulp.task('clean', function() {
 
 //выполянет сборку и доставку стилей
 gulp.task('styles', function() {
-	return gulp.src('src/styles/*.css')
+	return gulp.src('src/assets/css/*.scss')
 		.pipe(plumber({
 			errorHandler: notify.onError(function(err) { 
 				return {
@@ -56,7 +57,7 @@ gulp.task('styles', function() {
 			})
 		}))
 		.pipe(sourcemaps.init()) 
-		// .pipe(sass()) //Компиляция sass.
+		.pipe(sass()) //Компиляция sass.
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
 		}))
@@ -64,13 +65,19 @@ gulp.task('styles', function() {
 		.pipe(cssnano())
 		.pipe(sourcemaps.write())
 		.pipe(rename('build.css'))
-		.pipe(gulp.dest(destDir+'styles'));
+		.pipe(gulp.dest(destDir+'/assets/css'));
 });
 
 // Перемещает asset  в конечную директорию
 gulp.task('assets', function() {
 	return gulp.src('./src/assets/**/*.*')
 		.pipe(gulp.dest(destDir + '/assets'));
+});
+
+// Перемещает images  в конечную директорию
+gulp.task('images', function() {
+	return gulp.src('./src/images/**/*.*')
+		.pipe(gulp.dest(destDir + '/images'));
 });
 
 //доставляет файлы html в конечную папку
